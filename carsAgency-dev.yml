@@ -1,0 +1,21 @@
+server:
+   port: 8081
+spring:
+   datasource:
+      platform: postgres
+      url: jdbc:postgresql://database-1.cuko9tkjrmaa.us-east-1.rds.amazonaws.com:5432/db_autoAgency
+      username: postgres
+      password: N4rut02021
+      driver-class-name: org.postgresql.Driver
+      initialization-mode: ALWAYS
+   jpa:
+      hibernate:
+         ddl-auto: update
+      database: postgresql
+      properties:
+         hibernate:
+            dialect: org.hibernate.dialect.PostgreSQL9Dialect
+      show-sql: true
+      generate-ddl: true
+tracer:
+   property: DEV
